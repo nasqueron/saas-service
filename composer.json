@@ -1,0 +1,23 @@
+{
+    "name": "nasqueron/saas-service",
+    "description": "Generic library to serve an entry point for SaaS applications",
+    "type": "library",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Sébastien Santoro",
+            "email": "dereckson@espace-win.org"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Nasqueron\\SAAS\\": "src/",
+            "Nasqueron\\SAAS\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    }
+}
