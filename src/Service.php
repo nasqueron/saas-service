@@ -98,6 +98,8 @@ abstract class Service {
      */
     private static function isAliveRequest() : bool {
         return
+            array_key_exists('REQUEST_METHOD', $_SERVER)
+        &&
             ($_SERVER['REQUEST_METHOD'] === 'GET' || $_SERVER['REQUEST_METHOD'] === 'HEAD')
         &&
             static::getUri() === '/status';
